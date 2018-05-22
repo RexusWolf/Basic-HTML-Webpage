@@ -1,0 +1,51 @@
+<head>
+<style type="text/css">
+.borde-on {
+z-index:200;
+background-image:url(nexusencendido.png);
+width:207px;
+height:399px;
+}
+
+.borde-off {
+z-index:200;
+background-image:url(nexus.png);
+width:207px;
+height:399px;
+}
+
+
+#bootanimation {
+width:170px;
+height:250px;
+margin-top:69px;
+margin-left:-5px;
+display:none;
+}
+</style>
+<script type="text/javascript">
+function encender() {
+var menu = document.getElementById('borde');
+
+  if(menu.className == 'borde-off'){
+    menu.className = 'borde-on';
+  }
+  else{
+    menu.className = 'borde-off';
+  }
+}                     
+</script>
+
+</head>
+<body>
+<br />
+<br />
+<br />
+<br />
+<button onclick="encender();">Encender</button>
+<br />
+<br />
+<center><div id="borde" class="borde-off">
+<center><img id="bootanimation" src="./IMG/home.png" /></center>
+</div>
+</body> 
